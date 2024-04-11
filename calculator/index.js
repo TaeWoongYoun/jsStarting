@@ -8,7 +8,7 @@ function calculate(e) {
     // 클릭된 버튼의 값에 따라 동작을 구분합니다.
     if (value === '=') {
         // '=' 버튼 클릭 시, 현재 수식을 평가하여 결과를 출력합니다.
-        const data = eval(formula.join('')) || '';
+        const data = eval(formula.join(''));
         result.innerText = data;
         formula = [data.toString()]; // 계산 결과를 다음 계산에 사용할 수 있도록 수식을 설정합니다.
     } else if (value === 'C') {
@@ -26,14 +26,10 @@ function calculate(e) {
     }
 }
 
-// append event
-const numButtons = document.querySelectorAll('.key-wrap div');
-const calcButtons = document.querySelectorAll('.calc-wrap div');
-
-numButtons.forEach(button => {
+document.querySelectorAll('.key-wrap div').forEach(button => {
     button.addEventListener('click', calculate);
 });
 
-calcButtons.forEach(button => {
+document.querySelectorAll('.calc-wrap div').forEach(button => {
     button.addEventListener('click', calculate);
 });
