@@ -7,3 +7,10 @@ ctx.canvas.height = COLS * BLOCK_SIZE;
 
 // 블록의 크기 변경
 ctx.scale(BLOCK_SIZE, BLOCK_SIZE);
+
+let board = new Board();
+
+function play(){
+    board.reset();
+    console.table(board.grid);
+}
