@@ -1,5 +1,3 @@
-var num = 0
-for(var i = 0; i<5; i++){
-    num++;
-    console.log(num);
+for(var i = 1; i<6; i++){
+    console.log(i);
 }
