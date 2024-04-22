@@ -10,9 +10,10 @@ document.getElementById('btn3').addEventListener('click', function(){
     document.getElementById('div').style.width = (parseInt(window.getComputedStyle(document.getElementById('div'), null).getPropertyValue('width')) + 10) + 'px';
 })
 
-
-
-
 document.getElementById('btn4').addEventListener('click', function(){
     document.getElementById('div').style.height = (parseInt(window.getComputedStyle(document.getElementById('div'), null).getPropertyValue('height')) + 10) + 'px';
+})
+
+document.getElementById('btn5').addEventListener('click', function(){
+    document.getElementById('div').style.background = "#" + Math.floor(Math.random() * 16777215).toString(16);
 })
