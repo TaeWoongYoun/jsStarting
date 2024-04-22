@@ -17,3 +17,7 @@ document.getElementById('btn4').addEventListener('click', function(){
 document.getElementById('btn5').addEventListener('click', function(){
     document.getElementById('div').style.background = "#" + Math.floor(Math.random() * 16777215).toString(16);
 })
+
+document.getElementById('btn6').addEventListener('click', function(){
+    document.getElementById('div').style.borderRadius = (parseInt(window.getComputedStyle(document.getElementById('div'), null).getPropertyValue('border-radius')) + 3) + 'px';
+})
