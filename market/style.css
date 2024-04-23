@@ -54,7 +54,7 @@ nav input{
 }
 
 .content{
-    width: 1320px;
+    width: 1400px;
     height: 500px;
     display: flex;
     flex-wrap: wrap;
@@ -66,6 +66,7 @@ nav input{
     width: 300px;
     height: 400px;
     background-color: #fff;
+    margin: 20px;
 }
 
 .card img{
