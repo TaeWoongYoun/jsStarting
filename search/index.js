@@ -19,7 +19,7 @@ const poketmon = [
     {id : 16, name : '쥬피썬더', type : '전기', url : "image/013501.png"},
     {id : 16, name : '부스터', type : '불꽃', url : "image/013601.png"},
     {id : 16, name : '뮤츠', type : '에스퍼', url : "image/015001.png"},
-    {id : 16, name : '뮤', type : '에스퍼', url : "image/015101.png"},
+    {id : 16, name : '뮤', type : '에스퍼', url : "image/015101.png"}
 ]
 
 const list = document.getElementById('list');
@@ -47,6 +47,5 @@ const searchBtn = document.getElementById('searchBtn');
 searchBtn.addEventListener('click', (e) => {
     e.preventDefault();
     const val = searchInput.value;
-    console.log(val);
     showList(val);
 })
