@@ -1,3 +1,5 @@
+
+// 이미지가 담긴 도감
 var data = [
     { id: 0, title: "HTML5", brand: "html", photo: "image/pr1.jpg", price: 10000},
     { id: 1, title: "CSS3", brand: "css", photo: "image/pr2.jpg", price: 20000},
@@ -8,7 +10,7 @@ var data = [
 function card(products) {
     products.forEach(element => {
         var template = `
-        <div class="card">
+        <div class="card" draggable="true">
             <img src="${element.photo}" alt="">
             <div class="textBox">
                 <h2>${element.title}</h2>
@@ -21,4 +23,11 @@ function card(products) {
     });
 }
 
+const imgBox = document.querySelector('.card');
+
+imgBox.addEventListener('dragstart', (e) => {
+    console.log('드래그를 시작하면 발생하는 이벤트');
+})
+
 card(data)
+
