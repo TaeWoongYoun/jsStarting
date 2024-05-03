@@ -10,7 +10,6 @@ var drop = document.getElementById('drop');
 
 drop.addEventListener('dragover', (e) =>{
     e.preventDefault(); // 필수
-    e.dataTransfer.dropEffect = 'move';
 });
 
 drop.addEventListener('drop', (e) => {
