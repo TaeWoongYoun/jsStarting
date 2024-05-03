@@ -1,5 +1,6 @@
 const item = document.querySelector('.item');
 const box = document.getElementById("box");
+const main = document.getElementById('main');
 
 // 드래그 시작 
 // item.addEventListener('dragstart', (e) =>{
@@ -16,6 +17,26 @@ const box = document.getElementById("box");
 //     console.log("박스에 드래그 됨")
 // })
 
+// 박스에 드래그 중이면
+// box.addEventListener('dragover', (e) =>{
+//     console.log("박스에 드래그 중")
+// })
+
+//드롭 이벤트 테스트
+main.addEventListener('dragover', (e) =>{
+    e.preventDefault();
+})
+
+main.addEventListener('drop', (e) => {
+    e.preventDefault();
+    console.log('1번 박스에 이미지 드롭')
+})
+
 box.addEventListener('dragover', (e) =>{
-    console.log("박스에 드래그 중")
+    e.preventDefault();
+})
+
+box.addEventListener('drop', (e) => {
+    e.preventDefault();
+    console.log('2번 박스에 이미지 드롭')
 })
