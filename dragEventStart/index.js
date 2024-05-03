@@ -7,9 +7,16 @@
 // }, false)
 
 var drop = document.getElementById('drop');
+var drag = document.getElementById('drag');
+
+drag.addEventListener('dragstart', (e) =>{
+    e.dataTransfer.setData('data', this.innerHTML);
+    e.dataTransfer.dropEffect = 'copy'
+})
 
 drop.addEventListener('dragover', (e) =>{
     e.preventDefault(); // 필수
+    e.dataTransfer.dropEffect = 'move';
 });
 
 drop.addEventListener('drop', (e) => {
