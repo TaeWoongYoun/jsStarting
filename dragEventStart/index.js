@@ -6,19 +6,20 @@
 //     e.dataTransfer.setDragImage(img, 100, 100);
 // }, false)
 
-var drop = document.getElementById('drop');
-var drag = document.getElementById('drag');
+// 드롭시 alert알림
+// var drop = document.getElementById('drop');
+// var drag = document.getElementById('drag');
 
-drag.addEventListener('dragstart', (e) =>{
-    e.dataTransfer.setData('data', this.innerHTML);
-    e.dataTransfer.dropEffect = 'copy'
-})
+// drag.addEventListener('dragstart', (e) =>{
+//     e.dataTransfer.setData('data', this.innerHTML);
+//     e.dataTransfer.dropEffect = 'copy'
+// })
 
-drop.addEventListener('dragover', (e) =>{
-    e.preventDefault(); // 필수
-    e.dataTransfer.dropEffect = 'move';
-});
+// drop.addEventListener('dragover', (e) =>{
+//     e.preventDefault(); // 필수
+//     e.dataTransfer.dropEffect = 'move';
+// });
 
-drop.addEventListener('drop', (e) => {
-    alert('박스가 드래그 되었습니다.');
-});
+// drop.addEventListener('drop', (e) => {
+//     alert('박스가 드래그 되었습니다.');
+// });
