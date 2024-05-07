@@ -1,14 +1,14 @@
 let add = document.getElementById('make')
 let remove = document.getElementById('remove')
+let new_p = document.querySelector('.main')
 
-add.addEventListener('click', function(){
+add.addEventListener('click', e=>{
+    e.preventDefault();
     let element = document.createElement('p');
-    let addText = document.createTextNode('텍스트가 추가되었습니다.');
-    element.appendChild(addText);
-    document.body.append(element);
+    element.innerHTML = "새로운 텍스트 입니다."
+    new_p.appendChild(element);
 })
 
-remove.addEventListener('click', function(){ 
-    let element = document.createElement('p');
-    document.remove(element);
+remove.addEventListener('click', e=>{ 
+    new_p.removeChild(new_p.lastChild);
 })
