@@ -1,4 +1,4 @@
-let add = document.getElementById('make')
+let add = document.getElementById('add')
 let remove = document.getElementById('remove')
 let main = document.querySelector('.main')
 let counter = 0;
