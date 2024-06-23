@@ -3,25 +3,13 @@ $(document).ready(function(){
     const colorText = document.querySelector('.color');
     const btn = document.querySelector('button');
 
-    const colors = [
-        { id : 1, name : 'red'},
-        { id : 2, name : 'orange'},
-        { id : 3, name : 'yellow'},
-        { id : 4, name : 'lime'},
-        { id : 5, name : 'skyblue'},
-        { id : 6, name : 'aquamarine'},
-        { id : 7, name : 'coral'},
-        { id : 8, name : 'tomato'},
-        { id : 9, name : 'springgreen'},
-        { id : 10, name : 'gray'},
-        { id : 11, name : 'pink'}
-    ]
+    const colors = ['red', 'orange', 'yellow', 'lime', 'skyblue', 'aquamarine', 'coral', 'tomato', 'springgreen', 'gray', 'pink']
 
     const click = () => {
         const random = Math.floor(Math.random() * colors.length);
-        background.style.backgroundColor = colors[random].name;
-        colorText.style.color = colors[random].name;
-        colorText.textContent = colors[random].name;
+        background.style.backgroundColor = colors[random];
+        colorText.style.color = colors[random];
+        colorText.textContent = colors[random];
     }
 
     btn.addEventListener('click', click);
