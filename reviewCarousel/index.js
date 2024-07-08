@@ -4,7 +4,7 @@ const data = [
     {id:3, name:'모부기', title:'Frontend Developer', url:'image/green.png', text:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ratione, nam obcaecati iste placeat laborum nesciunt corporis ea tenetur sint ut et sit molestiae quod repellendus neque porro tempore dolorum?'},
     {id:4, name:'찌르꼬', title:'Web Publisher', url:'image/gray.png', text:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, dolore consectetur! Quidem voluptatibus culpa quae nemo. Molestiae nostrum a sunt. Consequuntur dolore molestiae vel debitis necessitatibus quidem? Deserunt, cupiditate quasi!'}
 ]
-
+const sliderContainer = document.querySelector('.slider');
 function slider(slide){
     slide.forEach(element => {
         const imgSlide = `
@@ -19,3 +19,23 @@ function slider(slide){
 }
 
 slider(data)
+
+const slideWidth = sliderContainer.clientWidth;
+let currentIndex = 0;
+
+
+function goToSlide(index) {
+    if (index < 0 || index >= data.length) return;
+
+    const offset = -index * slideWidth;
+    sliderContainer.style.transform = `translateX(${offset}px)`;
+    currentIndex = index;
+}
+
+document.querySelector('.prev').addEventListener('click', () => {
+    goToSlide(currentIndex - 1);
+});
+
+document.querySelector('.next').addEventListener('click', () => {
+    goToSlide(currentIndex + 1);
+});

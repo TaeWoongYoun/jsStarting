@@ -29,6 +29,7 @@
     width: 4000px;
     height: 100%;
     display: flex;
+    transition: all 0.5s;
 }
 
 .card{
