@@ -20,22 +20,23 @@ function slider(slide){
 
 slider(data)
 
-const slideWidth = sliderContainer.clientWidth;
-let currentIndex = 0;
+const slideBox = document.querySelector('.slider');
+const slideLength = document.querySelectorAll('.card').length;
+let index = 0;
+const next = document.querySelector('.next');
+const prev = document.querySelector('.prev');
 
-
-function goToSlide(index) {
-    if (index < 0 || index >= data.length) return;
-
-    const offset = -index * slideWidth;
-    sliderContainer.style.transform = `translateX(${offset}px)`;
-    currentIndex = index;
+function updateSlide() {
+    const offset = -index * 1000;
+    slideBox.style.transform = `translateX(${offset}px)`
 }
 
-document.querySelector('.prev').addEventListener('click', () => {
-    goToSlide(currentIndex - 1);
-});
+next.addEventListener('click', function(){
+    index = (index + 1) % slideLength;
+    updateSlide();
+})
 
-document.querySelector('.next').addEventListener('click', () => {
-    goToSlide(currentIndex + 1);
-});
+prev.addEventListener('click', function(){
+    index = (index - 1 + slideLength) % slideLength;
+    updateSlide();
+})
