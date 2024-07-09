@@ -25,10 +25,15 @@ const slideLength = document.querySelectorAll('.card').length;
 let index = 0;
 const next = document.querySelector('.next');
 const prev = document.querySelector('.prev');
+const random = document.querySelector('.random');
 
 function updateSlide() {
     const offset = -index * 1000;
     slideBox.style.transform = `translateX(${offset}px)`
+}
+
+function randomSlide() {
+    return Math.floor(Math.random() * slideLength);
 }
 
 next.addEventListener('click', function(){
@@ -38,5 +43,10 @@ next.addEventListener('click', function(){
 
 prev.addEventListener('click', function(){
     index = (index - 1 + slideLength) % slideLength;
+    updateSlide();
+})
+
+random.addEventListener('click', function(){
+    index = randomSlide();
     updateSlide();
 })
