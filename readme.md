@@ -50,7 +50,7 @@
         드래그 이벤트
       </td>
       <td align="center">
-        <img src="./image/faq_screenshot.png" width="300px" alt="FAQ 페이지 스크린샷"/>
+        <img src="./image/FAQ.png" width="300px" alt="FAQ 페이지 스크린샷"/>
         <br/>
         FAQ 페이지
       </td>
