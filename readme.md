@@ -13,6 +13,7 @@
   - `dragEventStart` : 다양한 드래그 이벤트 기능 구현
   - `FAQ` : 아코디언 기능을 사용한 FAQ 페이지 구현
   - `fontSizeUp` : 버튼으로 폰트 및 박스 크기 조정과 랜덤 색상 적용
+  - `image` : 프로젝트 이미지 모음
   - `imgSlide` : 자동 이미지 슬라이드 기능 구현
   - `keyboard` : 화면의 키보드를 클릭하여 검색창에 텍스트 입력 기능 구현
   - `loadFile` : 내 컴퓨터의 파일을 업로드하여 화면에 표시
@@ -20,6 +21,64 @@
   - `reviewCarousel` : 이전, 다음, 랜덤 버튼이 포함된 리뷰 캐러셀 기능
   - `search` : 포켓몬 검색 기능 구현
   - `tatris` : 테트리스 게임 기능 구현
+
+## 📸 주요 기능 이미지
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="./image/calculator.png" width="300px" alt="계산기 스크린샷"/>
+        <br/>
+        계산기
+      </td>
+      <td align="center">
+        <img src="./image/color-filpper.png" width="300px" alt="color-flipper 스크린샷"/>
+        <br/>
+        color-flipper
+      </td>
+      <td align="center">
+        <img src="./image/counter.png" width="300px" alt="카운터 스크린샷"/>
+        <br/>
+        카운터
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="./image/dragEventStart.png" width="300px" alt="드래그 이벤트 스크린샷"/>
+        <br/>
+        드래그 이벤트
+      </td>
+      <td align="center">
+        <img src="./image/faq_screenshot.png" width="300px" alt="FAQ 페이지 스크린샷"/>
+        <br/>
+        FAQ 페이지
+      </td>
+      <td align="center">
+        <img src="./image/keyboard.png" width="300px" alt="키보드 스크린샷"/>
+        <br/>
+        키보드
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="./image/reaviewCarousel.png" width="300px" alt="리뷰 캐러셀 스크린샷"/>
+        <br/>
+        리뷰 캐러셀
+      </td>
+      <td align="center">
+        <img src="./image/search.png" width="300px" alt="포켓몬 도감 검색 스크린샷"/>
+        <br/>
+        포켓몬 도감 검색
+      </td>
+      <td align="center">
+        <img src="./image/tatris.png" width="300px" alt="테트리스 스크린샷"/>
+        <br/>
+        테트리스
+      </td>
+    </tr>
+  </table>
+</div>
 
 ## 🛠 사용된 기술 스택
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) 
